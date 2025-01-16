@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archanid Bot - Your Ultimate Discord Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Archanid Bot</div>
+        <nav>
+            <a href="#commands">Commands</a>
+            <a href="#about">About</a>
+            <div class="nav-buttons">
+                <a href="https://discord.com/oauth2/authorize?client_id=1326261333930545185&permissions=1127551661636807&integration_type=0&scope=bot" class="button">Invite Me</a>
+                <a href="https://discord.gg/UwdkuUPBZ2" class="button">Support Server</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Archanid Bot</h1>
+            <p>Your Ultimate Discord Assistant</p>
+        </section>
+        <section id="commands">
+            <h2>Commands</h2>
+            <div class="command-category">
+                <h3 onclick="toggleCommands(event)">Music Commands<span class="new-tag">NEW</span></h3>
+                <ul class="dropdown">
+                    <li><code>$play &lt;song name&gt;</code> - Play a song or add it to queue</li>
+                    <li><code>$stop</code> - Stop playing and clear the queue</li>
+                    <li><code>$skip</code> - Skip the current song</li>
+                    <li><code>$queue</code> - Show the current music queue</li>
+                    <li><code>$pause</code> - Pause the current song</li>
+                    <li><code>$resume</code> - Resume the paused song</li>
+                </ul>
+            </div>
+            <div class="command-category">
+                <h3 onclick="toggleCommands(event)">Admin Commands</h3>
+                <ul class="dropdown">
+                    <li><code>$setprefix &lt;new_prefix&gt;</code> - Change the server prefix</li>
+                    <li><code>$add @user &lt;amount&gt;</code> - Add coins to user's balance</li>
+                    <li><code>$banbot @user</code> - Ban user from using bot</li>
+                    <li><code>$unbanbot @user</code> - Unban user from bot</li>
+                    <li><code>$ban @user [time]</code> - Ban user from server</li>
+                    <li><code>$kick @user</code> - Kick user from server</li>
+                    <li><code>$mute @user [time]</code> - Mute a user</li>
+                    <li><code>$unmute @user</code> - Unmute a user</li>
+                    <li><code>$purge &lt;amount&gt;</code> - Delete messages</li>
+                    <li><code>$r @user &lt;role&gt;</code> - Add role to user</li>
+                </ul>
+            </div>
+            <div class="command-category">
+                <h3 onclick="toggleCommands(event)">Economy Commands</h3>
+                <ul class="dropdown">
+                    <li><code>$daily</code> - Get daily rewards</li>
+                    <li><code>$balance</code> - Check your balance</li>
+                    <li><code>$gamble &lt;amount&gt;</code> - Gamble your coins</li>
+                    <li><code>$cf &lt;amount&gt; [heads/tails]</code> - Play coinflip</li>
+                    <li><code>$rob @user</code> - Rob another user</li>
+                </ul>
+            </div>
+            <div class="command-category">
+                <h3 onclick="toggleCommands(event)">Game Commands</h3>
+                <ul class="dropdown">
+                    <li><code>$hunt</code> - Go hunting</li>
+                    <li><code>$battle @user</code> - Battle another user</li>
+                    <li><code>$petbattle @user</code> - Battle with your team</li>
+                    <li><code>$teamadd</code> - Create your battle team</li>
+                </ul>
+            </div>
+            <div class="command-category">
+                <h3 onclick="toggleCommands(event)">Inventory Commands</h3>
+                <ul class="dropdown">
+                    <li><code>$inventory</code> - View your inventory</li>
+                    <li><code>$shop</code> - View the shop</li>
+                    <li><code>$buy &lt;item_number&gt; &lt;quantity&gt;</code> - Buy items</li>
+                </ul>
+            </div>
+            <div class="command-category">
+                <h3 onclick="toggleCommands(event)">Utility Commands</h3>
+                <ul class="dropdown">
+                    <li><code>$afk [reason]</code> - Set AFK status</li>
+                    <li><code>$leaderboard</code> - View top players</li>
+                    <li><code>$invite</code> - Get bot invite link</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Archanid Bot is your ultimate assistant for managing Discord servers with advanced admin tools, fun games, and daily rewards to keep the community engaged!</p>
+    </footer>
+</body>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</html>
