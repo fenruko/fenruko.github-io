@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const commandHeaders = document.querySelectorAll('.command-category h3');
 
     commandHeaders.forEach(header => {
-        header.addEventListener('click', function(event) {
+        header.addEventListener('click', function() {
             const dropdown = this.nextElementSibling; // Get the corresponding dropdown
 
             // Toggle the 'active' class
