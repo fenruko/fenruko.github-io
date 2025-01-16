@@ -5,140 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archanid Bot - Your Ultimate Discord Assistant</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-        }
-
-        .logo {
-            font-size: 24px;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .nav-buttons {
-            display: flex;
-        }
-
-        .button {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-left: 10px;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        h1, h2, h3 {
-            margin: 10px 0;
-        }
-
-        .command-category {
-            margin-bottom: 20px;
-        }
-
-        .dropdown {
-            display: none;
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .dropdown li {
-            margin: 5px 0;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            nav {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            nav a {
-                margin: 5px 0;
-            }
-
-            .nav-buttons {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .button {
-                width: 100%;
-                margin: 5px 0;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-
-            h2 {
-                font-size: 24px;
-            }
-
-            h3 {
-                font-size: 20px;
-                cursor: pointer;
-            }
-
-            .dropdown {
-                display: block; /* Show dropdowns by default on mobile */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .logo {
-                font-size: 20px;
-            }
-
-            .button {
-                padding: 8px 10px;
-            }
-
-            h1 {
-                font-size: 24px;
-            }
-
-            h2 {
-                font-size: 22px;
-            }
-
-            h3 {
-                font-size: 18px;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -147,7 +13,7 @@
             <a href="#commands">Commands</a>
             <a href="#about">About</a>
             <div class="nav-buttons">
-                <a href="https://discord.com/oauth2/authorize?client_id=1329184069426348052&permissions=564601853963590&integration_type=0&scope=bot" class="button">Invite Me</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=1326261333930545185&permissions=1127551661636807&integration_type=0&scope=bot" class="button">Invite Me</a>
                 <a href="https://discord.gg/UwdkuUPBZ2" class="button">Support Server</a>
             </div>
         </nav>
@@ -159,8 +25,8 @@
         </section>
         <section id="commands">
             <h2>Commands</h2>
-            <div class="command-category">
-                <h3 onclick="toggleCommands(event)">Music Commands<span class="new-tag">NEW</span></h3>
+            <div class="command-category" tabindex="0">
+                <h3>Music Commands<span class="new-tag">NEW</span></h3>
                 <ul class="dropdown">
                     <li><code>$play &lt;song name&gt;</code> - Play a song or add it to queue</li>
                     <li><code>$stop</code> - Stop playing and clear the queue</li>
@@ -170,8 +36,8 @@
                     <li><code>$resume</code> - Resume the paused song</li>
                 </ul>
             </div>
-            <div class="command-category">
-                <h3 onclick="toggleCommands(event)">Admin Commands</h3>
+            <div class="command-category" tabindex="0">
+                <h3>Admin Commands</h3>
                 <ul class="dropdown">
                     <li><code>$setprefix &lt;new_prefix&gt;</code> - Change the server prefix</li>
                     <li><code>$add @user &lt;amount&gt;</code> - Add coins to user's balance</li>
@@ -185,8 +51,8 @@
                     <li><code>$r @user &lt;role&gt;</code> - Add role to user</li>
                 </ul>
             </div>
-            <div class="command-category">
-                <h3 onclick="toggleCommands(event)">Economy Commands</h3>
+            <div class="command-category" tabindex="0">
+                <h3>Economy Commands</h3>
                 <ul class="dropdown">
                     <li><code>$daily</code> - Get daily rewards</li>
                     <li><code>$balance</code> - Check your balance</li>
@@ -195,8 +61,8 @@
                     <li><code>$rob @user</code> - Rob another user</li>
                 </ul>
             </div>
-            <div class="command-category">
-                <h3 onclick="toggleCommands(event)">Game Commands</h3>
+            <div class="command-category" tabindex="0">
+                <h3>Game Commands</h3>
                 <ul class="dropdown">
                     <li><code>$hunt</code> - Go hunting</li>
                     <li><code>$battle @user</code> - Battle another user</li>
@@ -204,16 +70,17 @@
                     <li><code>$teamadd</code> - Create your battle team</li>
                 </ul>
             </div>
-            <div class="command-category">
-                <h3 onclick="toggleCommands(event)">Inventory Commands</h3>
+            <div class="command-category" tabindex="0">
+                <h3>Inventory Commands</h3>
+                <ul ```html
                 <ul class="dropdown">
                     <li><code>$inventory</code> - View your inventory</li>
                     <li><code>$shop</code> - View the shop</li>
                     <li><code>$buy &lt;item_number&gt; &lt;quantity&gt;</code> - Buy items</li>
                 </ul>
             </div>
-            <div class="command-category">
-                <h3 onclick="toggleCommands(event)">Utility Commands</h3>
+            <div class="command-category" tabindex="0">
+                <h3>Utility Commands</h3>
                 <ul class="dropdown">
                     <li><code>$afk [reason]</code> - Set AFK status</li>
                     <li><code>$leaderboard</code> - View top players</li>
