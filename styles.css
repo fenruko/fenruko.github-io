@@ -57,12 +57,35 @@ nav a {
     background: linear-gradient(45deg, #e91e63, #ff6f61); /* Change background on hover */
 }
 
+/* Colorful Transitioning Rectangle */
 #hero {
+    position: relative;
     text-align: center;
     padding: 50px 20px;
     color: #fff;
     border-radius: 0 0 20px 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Hide overflow for the animated background */
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(270deg, #36c6ff, #8e44ad, #ff6f61, #ffcc00);
+    animation: heroBackgroundTransition 15s infinite; /* Apply the color transition */
+    z-index: -1; /* Place behind the content */
+}
+
+@keyframes heroBackgroundTransition {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 100% 50%; }
+    50% { background-position: 0% 50%; }
+    75% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 h1 {
@@ -99,4 +122,38 @@ h2 {
     padding: 5px 10px;
     border-radius: 5px;
     font-weight: bold;
-    margin-left
+    margin-left: 10px; ```css
+    /* Space between command and tag */
+}
+
+.dropdown {
+    max-height: 0; /* Start with height 0 */
+    overflow: hidden; /* Hide overflow */
+    transition: max-height 0.3s ease-out; /* Smooth transition for height */
+}
+
+.dropdown.active {
+    max-height: 500px; /* Set a max height to allow for expansion */
+}
+
+.dropdown li {
+    background: rgba(50, 50, 50, 0.8); /* Background for dropdown items */
+    padding: 10px; /* Padding for dropdown items */
+    border-radius: 5px; /* Rounded corners for dropdown items */
+    margin: 5px 0; /* Space between dropdown items */
+    transition: background 0.3s, border 0.3s; /* Smooth background transition */
+    border: 1px solid transparent; /* Default border */
+}
+
+.dropdown li:hover {
+    background: rgba(70, 70, 70, 0.8); /* Change background on hover */
+    border: 1px solid #ffcc00; /* Highlight border on hover */
+}
+
+footer {
+    text-align: center; /* Centered text in footer */
+    margin-top: 20px; /* Space above footer */
+    padding: 20px; /* Padding for footer */
+    background: rgba(20, 20, 20, 0.95); /* Footer background */
+    color: #ddd; /* Footer text color */
+}
