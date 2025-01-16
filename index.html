@@ -6,6 +6,139 @@
     <title>Archanid Bot - Your Ultimate Discord Assistant</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .nav-buttons {
+            display: flex;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            margin: 10px 0;
+        }
+
+        .command-category {
+            margin-bottom: 20px;
+        }
+
+        .dropdown {
+            display: none;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .dropdown li {
+            margin: 5px 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+
+            .nav-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .button {
+                width: 100%;
+                margin: 5px 0;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+            .dropdown {
+                display: block; /* Show dropdowns by default on mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 20px;
+            }
+
+            .button {
+                padding: 8px 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -93,6 +226,4 @@
         <p>Archanid Bot is your ultimate assistant for managing Discord servers with advanced admin tools, fun games, and daily rewards to keep the community engaged!</p>
     </footer>
 </body>
-<link rel="stylesheet" href="styles.css">
-<script src="script.js" defer></script>
 </html>
